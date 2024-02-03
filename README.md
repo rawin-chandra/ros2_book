@@ -1,5 +1,10 @@
 โปรแกรมและข้อมูลประกอบหนังสือ "ROS2 โปรแกรมสำหรับคนรักหุ่นยนต์"
 ผศ.รวินทร์  ไชยสิทธิพร
+สัั่งซื้อได้ทาง
+https://docs.google.com/forms/d/e/1FAIpQLSc90mtGTsXizUMKVq_gehLVcYWujSI_bmQ4A_U3BV3oREH60g/viewform
+
+หรืิอในแฟนเพจ www.facebook.com/teacherwinzatori
+
 
 *** ในหนังสือฉบับพิมพ์ครั้งที่ 1 นั้น file ชื่อ motor.py จะมี bug ได้ปรับแก้ไขใน github นี้แล้วครับ **** 
 
