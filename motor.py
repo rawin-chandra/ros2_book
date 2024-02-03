@@ -59,18 +59,19 @@ class Motor(Node):
                return
 
 
-            if self.dir == 0 or self.dir == 4 or self.dir == 5:
+            if self.dir == 0 or self.dir == 4 or self.dir == 5:           #**** edit from error in the book
                self.real_left_vel = float(vals[0])
                self.real_right_vel = float(vals[1])
             elif self.dir == 1 or self.dir == 6 or self.dir == 7:
-               self.real_left_vel = float(vals[2])
-               self.real_right_vel = float(vals[3])
+               self.real_left_vel = -1 * float(vals[2])
+               self.real_right_vel = -1 * float(vals[3])
             elif self.dir == 2:
-               self.real_left_vel = float(vals[2])
+               self.real_left_vel = -1 * float(vals[2])
                self.real_right_vel = float(vals[1])
             elif self.dir == 3:
                self.real_left_vel = float(vals[0])
-               self.real_right_vel = float(vals[3])
+               self.real_right_vel = -1 * float(vals[3])
+
 
 
             diff_left = abs(self.real_left_vel) - abs(self.left_vel)
