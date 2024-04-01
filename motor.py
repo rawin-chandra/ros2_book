@@ -23,11 +23,11 @@ class Motor(Node):
         self.dir = 0    #0, 1 , 2 ,3 ,4 ,5 ,6 ,7 =>  fw, bw, L, R, LF, RF, LB, RB
 
         self.pi = pigpio.pi()
-        self.pi.set_PWM_frequency(19,100);
-        self.pi.set_PWM_frequency(23,100);
+        self.pi.set_PWM_frequency(19,100);  //GPI19 to left motor PWM
+        self.pi.set_PWM_frequency(23,100);  //GPI23 to right motor PWM
 
-        self.pi.set_mode(24, pigpio.OUTPUT)
-        self.pi.set_mode(26, pigpio.OUTPUT)
+        self.pi.set_mode(24, pigpio.OUTPUT) //GPI24 to left motor DIR
+        self.pi.set_mode(26, pigpio.OUTPUT) //GPI26 to left motor DIR
 
 
         self.motor_val = [0,0]
